@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Galaxy Store</h1>
+            <div class="cart-container" id="cart-button">
+                <img src="https://cdn-icons-png.flaticon.com/512/3081/3081840.png" alt="Cart" id="cart-icon">
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero-title">Style Meets Technology</h2>
+                <p class="hero-subtitle">Discover our curated collection of fashion, gadgets, and more.</p>
+                <a href="#products-section" class="btn btn-primary">Shop Now</a>
+            </div>
+        </section>
+
+        <section id="products-section">
+            <div class="container">
+                <h2 class="section-title">Our Products</h2>
+                <div id="products-grid">
+                    <!-- Products will be dynamically injected here by script.js -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Have a question? Drop us a line!</p>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 E-Shop. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+            <div class="cart-summary">
+                <h3>Total: $<span id="cart-total">0.00</span></h3>
+                <button id="checkout-btn">Checkout</button>
+                <button id="clear-cart-btn">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
